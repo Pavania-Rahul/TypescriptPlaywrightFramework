@@ -8,12 +8,4 @@ export const productPageLocator ={
     productDescription: ".inventory_item_desc",
     productPrices: ".inventory_item_price",
     addToCartButtons:".btn_inventory",
-    filterNameAtoZ: "",
-    filterNameZtoA: "",
-    filterPriceLowToHigh:"",
-    filterPriceHighToLow: ""
-
-
-
-
 }

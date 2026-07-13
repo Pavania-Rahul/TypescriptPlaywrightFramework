@@ -4,7 +4,6 @@ import { Logger } from "../logger/Logger";
 
 export class LoginPage extends BasePage{
 
-
     async login(username:string,password:string){
         Logger.info("Entering Username");
         await this.fill(loginLocators.username, username);
