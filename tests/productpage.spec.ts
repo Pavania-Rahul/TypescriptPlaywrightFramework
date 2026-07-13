@@ -24,7 +24,7 @@ test("Validate Logout functionality",async({page, loginPage, productPage})=>
     Logger.info("clicking on logout button");
     await productPage.logout();
     Logger.info("Verify Submit button is visible");
-    await expect(page.locator(loginLocators.logiBtn)).toBeVisible();
+    await expect(page.locator(loginLocators.submitBtn)).toBeVisible();
 }
 );
  
