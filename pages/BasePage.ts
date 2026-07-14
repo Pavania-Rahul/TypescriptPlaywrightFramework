@@ -1,11 +1,11 @@
 import { Page, Locator } from "@playwright/test";
 
 export class BasePage {
-    constructor(protected page: Page) {}
+    constructor(protected page: Page) { }
 
     async navigate(url: string) {
-    await this.page.goto(url);
-}
+        await this.page.goto(url);
+    }
 
     locator(selector: string): Locator {
         return this.page.locator(selector);

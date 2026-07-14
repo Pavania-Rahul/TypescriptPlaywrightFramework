@@ -1,5 +1,5 @@
-export const productPageLocator ={
- 
+export const productPageLocator = {
+
     settingIcon: "#react-burger-menu-btn",
     logoutLink: "#logout_sidebar_link",
     aboutLink: "#about_sidebar_link",
@@ -7,5 +7,5 @@ export const productPageLocator ={
     productNames: ".inventory_item_name ",
     productDescription: ".inventory_item_desc",
     productPrices: ".inventory_item_price",
-    addToCartButtons:".btn_inventory",
+    addToCartButtons: ".btn_inventory",
 }
