@@ -9,7 +9,11 @@
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
     "test:ui": "playwright test --ui",
-    "test:chrome": "playwright test --project=chromium"
+    "test:chrome": "playwright test --project=chromium",
+     "test:allure": "playwright test && allure serve allure-results",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
   },
   "keywords": [],
   "author": "",
@@ -17,13 +21,14 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.1.1"
+    "@types/node": "^26.1.1",
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.10.2"
   },
   "directories": {
     "test": "tests"
   },
   "dependencies": {
-    "allure-playwright": "^3.10.2",
     "dotenv": "^17.4.2",
     "faker": "^6.6.6",
     "playwright": "^1.61.1",
