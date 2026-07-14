@@ -1,4 +1,4 @@
-import { Page, Locator } from "@playwright/test";
+import { Page, Locator ,expect} from "@playwright/test";
 
 export class BasePage {
     constructor(protected page: Page) { }
@@ -17,5 +17,13 @@ export class BasePage {
 
     async fill(selector: string, value: string) {
         await this.locator(selector).fill(value);
+    }
+
+    async getText(selector:string){
+     return this.locator(selector).textContent()
+    }
+
+    async verifyVisible(selector:string){
+      await expect(this.locator(selector)).toBeVisible();
     }
 }
